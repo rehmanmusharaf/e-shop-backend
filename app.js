@@ -25,6 +25,7 @@ app.use(
   cors({
     origin: [process.env.frontendurl],
     credentials: true,
+    exposedHeaders: ["Set-cookie"],
   })
 );
 // origin: process.env.frontendurl,
